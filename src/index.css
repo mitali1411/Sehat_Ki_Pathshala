@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: yellowgreen;
+    background: rgb(252, 253, 254);
+}
+.navbar, .navbar-brand{
+    background: yellowgreen;
+    color: rgb(252, 253, 254);
+}
+i{
+    font-size: 40px;
+}
+.container-fluid img{
+    width: 300px;
+    position: relative;
+    right: 200px;
+}
+.carousel-container{
+    display: flex;
+    /* align-self: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel{
+    width: 1500px;
+}
+.carousel-inner{
+    position: relative;
+    left: 150px;
+}
+.carousel-item{
+    padding: 60px;
+}
+.carousel-item img{
+    height: 90vh;
+    object-fit: contain;
+}
+.img-fluid image{
+    background-size: cover;
+    /* background-position: center; */
+  }
