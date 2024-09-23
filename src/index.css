@@ -5,12 +5,27 @@
     color: yellowgreen;
     background: rgb(252, 253, 254);
 }
-.navbar, .navbar-brand, .container{
+body{
+    background-position: center;
+}
+.navbar, .navbar-brand{
     background: yellowgreen;
     color: rgb(252, 253, 254);
 }
-
-.container-fluid img{
+.navbar img{
+    width: 90px;
+    border-radius: 50%;
+}
+#call{
+    color: black;
+    background-color: yellowgreen;
+}
+a{
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: black;
+}
+#uncle img{
     width: 300px;
 }
 i{
@@ -21,7 +36,7 @@ i{
 }
 .carousel-item img{
     width: 30vh;
-    height: 50vh;
+    height: 70vh;
 }
 select{
     width: 20px;

@@ -19,7 +19,8 @@ import Result14 from '../assets/14.jpg'
 
 const Slider = () => {
   return (
-    <div className="container">
+    <div className="container py-5">
+        <h1 className='text-center my-4'>OUR RESULTS</h1>
         <div className="row">
             <div className="col-md-8 offset-md-2">
                 <div id="carouselExampleIndicators" 
