@@ -5,39 +5,38 @@
     color: yellowgreen;
     background: rgb(252, 253, 254);
 }
-.navbar, .navbar-brand{
+.navbar, .navbar-brand, .container{
     background: yellowgreen;
     color: rgb(252, 253, 254);
+}
+
+.container-fluid img{
+    width: 300px;
 }
 i{
     font-size: 40px;
 }
-.container-fluid img{
-    width: 300px;
-    position: relative;
-    right: 200px;
-}
-.carousel-container{
-    display: flex;
-    /* align-self: center; */
-    justify-content: center;
-    flex-direction: column;
-}
-.carousel{
-    width: 1500px;
-}
-.carousel-inner{
-    position: relative;
-    left: 150px;
-}
-.carousel-item{
-    padding: 60px;
+#check{
+    font-size: 100px;
 }
 .carousel-item img{
-    height: 90vh;
-    object-fit: contain;
+    width: 30vh;
+    height: 50vh;
 }
-.img-fluid image{
-    background-size: cover;
-    /* background-position: center; */
-  }
+select{
+    width: 20px;
+}
+#flag{
+    width: 30px;
+    height: 30px;
+}
+#phone-number{
+    margin-left: 10px;
+}
+#submit{
+    background-color: yellowgreen;
+    color: aliceblue;
+}
+#submit:hover{
+    color: black;
+}

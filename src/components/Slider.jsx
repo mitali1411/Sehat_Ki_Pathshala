@@ -1,52 +1,70 @@
 import React from 'react'
-import Result1 from '../assets/1.jpg'
-import Result2 from '../assets/2.jpg'
-import Result3 from '../assets/3.jpg'
-import Result4 from '../assets/4.jpg'
-import Result5 from '../assets/5.jpg'
-import Result6 from '../assets/6.jpg'
-import Result7 from '../assets/7.jpg'
-import Result8 from '../assets/8.jpg'
-import Result9 from '../assets/9.jpg'
-import Result10 from '../assets/10.jpg'
+// import Result1 from '../assets/1.png'
+// import Result2 from '../assets/2.png'
+// import Result3 from '../assets/3.png'
+// import Result4 from '../assets/4.png'
+// import Result5 from '../assets/5.png'
+// import Result6 from '../assets/6.png'
+// import Result7 from '../assets/7.png'
+// import Result8 from '../assets/8.png'
+// import Result9 from '../assets/9.png'
+// import Result10 from '../assets/10.png'
+import Result11 from '../assets/11.jpg'
+import Result12 from '../assets/12.jpg'
+import Result13 from '../assets/13.jpg'
+import Result14 from '../assets/14.jpg'
+// import Result15 from '../assets/15.jpg'
+
 
 
 const Slider = () => {
   return (
-    <div className='carousel-container p-5'>
-        <h2 className='text-center'>Our Results</h2>
+    <div className="container">
+        <div className="row">
+            <div className="col-md-8 offset-md-2">
+                <div id="carouselExampleIndicators" 
+                     className="carousel slide" 
+                     data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src={Result11} className="d-block w-100" alt="Slide 1"/>
+                        </div>
 
-        <div id="carouselExampleSlidesOnly" className="carousel slide py-4" data-bs-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="3000">
-                    <img src={Result1} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result2} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result3} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result4} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result5} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result6} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result7} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result8} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result9} className="img-fluid d-block w-100" alt=""/>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                    <img src={Result10} className="img-fluid d-block w-100" alt=""/>
+                        <div className="carousel-item">
+                            <img src={Result12} className="d-block w-100" alt="Slide 1"/>
+                        </div>
+
+                        <div className="carousel-item">
+                            <img src={Result13} className="d-block w-100" alt="Slide 1"/>
+                        </div>
+
+                        <div className="carousel-item">
+                            <img src={Result14} className="d-block w-100" alt="Slide 1"/>
+                        </div>
+
+
+                    </div>
+                    <button className="carousel-control-prev" 
+                            type="button" 
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" 
+                              aria-hidden="true">
+                          </span>
+                        <span className="visually-hidden">
+                              Previous
+                          </span>
+                    </button>
+                    <button className="carousel-control-next" type="button" 
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                        <span className="carousel-control-next-icon" 
+                              aria-hidden="true">
+                          </span>
+                        <span className="visually-hidden">
+                              Next
+                          </span>
+                    </button>
                 </div>
             </div>
         </div>
