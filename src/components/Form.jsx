@@ -78,7 +78,7 @@ const Form = () => {
     }
 
   return (
-    <div className='py-5 px-1 d-flex align-items-center justify-content-center flex-column'>
+    <div className='py-5 px-5 d-flex align-items-center justify-content-center flex-column'>
         <h2 className='text-center text-uppercase'>Know about you</h2>
         {submitted ? (
             <div className="card my-5 p-5 d-flex align-items-center justify-content-center shadow rounded-0">
@@ -108,7 +108,7 @@ const Form = () => {
                 <input type="time" name='time' className={`form-control ${errors.time ? 'is-invalid' : ""}`} id="Call" value={formData.time} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.time}</span>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn" id='submit'>Submit</button>
         </form>
         )}
     </div>

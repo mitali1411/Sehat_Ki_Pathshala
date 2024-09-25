@@ -8,13 +8,35 @@
 body{
     background-position: center;
 }
-.navbar, .navbar-brand{
+/* .navbar, .navbar-brand{
     background: yellowgreen;
     color: rgb(252, 253, 254);
 }
+.navbar h3{
+    background-color: yellowgreen;
+} */
 .navbar img{
     width: 90px;
     border-radius: 50%;
+}
+.navbar button{
+    background-color: yellowgreen;
+    color: rgb(252, 253, 254);
+    font-weight: 500;
+    height: 45px;
+    border-radius: 15px 5px 15px 5px;
+}
+.navbar button a{
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+.navbar button:hover{
+    background-color: rgb(252, 253, 254);
+    border: 2px solid yellowgreen;
+    border-style: dashed;
+}
+.navbar button a:hover{
+    background-color: rgb(252, 253, 254);
 }
 #call{
     color: black;
@@ -22,14 +44,33 @@ body{
 }
 a{
     text-decoration: none;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     color: black;
 }
 #uncle img{
     width: 300px;
 }
-i{
+
+
+footer{
+    background-color: yellowgreen;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer img{
+    width: 150px;
+    background-color: yellowgreen;
+}
+.icon, .icon i{
+    background-color: yellowgreen;
+    color: rgb(15, 15, 15);
     font-size: 40px;
+    margin-left: 15px;
+}
+.icon h4{
+    background-color: yellowgreen;
 }
 #check{
     font-size: 100px;
@@ -37,9 +78,7 @@ i{
 .carousel-item img{
     width: 30vh;
     height: 70vh;
-}
-select{
-    width: 20px;
+    object-fit: contain;
 }
 #flag{
     width: 30px;

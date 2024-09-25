@@ -1,16 +1,21 @@
 import React from 'react'
+import Logo from '../assets/Logo2.png'
 
 const Footer = () => {
   return (
-    <div>
+    <footer className=''>
+      <img src={Logo} alt="" />
+
+    <div className='icon'>
+      <h4 className='text-center'>CONTACT US</h4>
+      <span className='icon'>
         <i className='bx bxs-phone-call'></i>
-        {/* <i className='bx bx-phone-call' ></i> */}
-        {/* <i className='bx bxl-whatsapp' ></i> */}
-        <i className='bx bxl-whatsapp-square'></i>
+        <i className='bx bxl-whatsapp'></i>
         <i className='bx bxl-instagram-alt' ></i>
-        {/* <i className='bx bxl-facebook' ></i> */}
-        <i className='bx bxl-facebook-circle'></i>
-    </div>
+        <i className='bx bxl-facebook-circle'></i>       
+      </span>
+      </div>
+    </footer>
   )
 }
 
