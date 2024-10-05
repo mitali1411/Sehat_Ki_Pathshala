@@ -84,10 +84,10 @@ const Form = () => {
             <div className="card my-5 p-5 d-flex align-items-center justify-content-center shadow rounded-0">
                 <i className='bx bxs-check-circle' id='check' ></i>
                 <h1 className='text-muted mt-5'>THANK YOU!</h1>
-                <h5 className='text-muted mt-3'>Your form has been submitted successfully!!</h5>
+                <h5 className='text-muted mt-3 text-center'>Your form has been submitted successfully!!</h5>
             </div>
         ) : (
-            <form onSubmit={handleSubmit} className='w-100 p-5 shadow-sm rounded-0'>
+            <form onSubmit={handleSubmit} className='p-5 rounded-0'>
             <div className="mb-4">
                 <label htmlFor="Name" className="form-label">Enter Your Name</label>
                 <input type="text" name='name' className={`form-control ${errors.name ? 'is-invalid' : ""}`} id="Name" value={formData.name} onChange={handleChange} required/>
@@ -108,7 +108,7 @@ const Form = () => {
                 <input type="time" name='time' className={`form-control ${errors.time ? 'is-invalid' : ""}`} id="Call" value={formData.time} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.time}</span>
             </div>
-            <button type="submit" className="btn" id='submit'>Submit</button>
+            <button type="submit" className="btn float-end" id='submit'>Submit</button>
         </form>
         )}
     </div>

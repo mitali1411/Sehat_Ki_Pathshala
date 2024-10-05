@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    color: yellowgreen;
+    color: rgb(122, 205, 50);
     background: rgb(252, 253, 254);
+    font-family: "Tiro Devanagari Hindi", serif;
 }
 body{
     background-position: center;
@@ -15,24 +15,32 @@ body{
 .navbar h3{
     background-color: yellowgreen;
 } */
+ .navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 0px rgb(122, 205, 50);
+
+ }
 .navbar img{
     width: 90px;
     border-radius: 50%;
 }
 .navbar button{
-    background-color: yellowgreen;
+    background-color: rgb(122, 205, 50);
     color: rgb(252, 253, 254);
     font-weight: 500;
     height: 45px;
     border-radius: 15px 5px 15px 5px;
 }
 .navbar button a{
-    background-color: yellowgreen;
+    background-color: rgb(122, 205, 50);
     text-decoration: none;
 }
 .navbar button:hover{
     background-color: rgb(252, 253, 254);
-    border: 2px solid yellowgreen;
+    border: 2px solid rgb(122, 205, 50);
     border-style: dashed;
 }
 .navbar button a:hover{
@@ -40,37 +48,36 @@ body{
 }
 #call{
     color: black;
-    background-color: yellowgreen;
+    background-color: rgb(122, 205, 50);
 }
 a{
     text-decoration: none;
     /* background-color: yellowgreen; */
     color: black;
 }
-#uncle img{
+.para{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.h2{
+    margin-bottom: -5px;
+}
+#owner img{
     width: 300px;
 }
 
-
-footer{
-    background-color: yellowgreen;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#home{
+    width: 100%;
+    height: auto;
 }
-footer img{
-    width: 150px;
-    background-color: yellowgreen;
+#intro{
+    width: 50%;
+    height: auto;
 }
-.icon, .icon i{
-    background-color: yellowgreen;
-    color: rgb(15, 15, 15);
-    font-size: 40px;
-    margin-left: 15px;
-}
-.icon h4{
-    background-color: yellowgreen;
+#owner{
+    width: 50%;
+    height: auto;
 }
 #check{
     font-size: 100px;
@@ -79,6 +86,8 @@ footer img{
     width: 30vh;
     height: 70vh;
     object-fit: contain;
+    position: relative;
+    z-index: 1;
 }
 #flag{
     width: 30px;
@@ -88,9 +97,131 @@ footer img{
     margin-left: 10px;
 }
 #submit{
-    background-color: yellowgreen;
+    background-color: rgb(122, 205, 50);
     color: aliceblue;
 }
 #submit:hover{
     color: black;
+}
+form{
+    width: 450px;
+    height: auto;
+    box-shadow: 0px 0px 10px 2px rgb(122, 205, 50);
+
+}
+
+
+footer{
+    /* background-color: rgb(122, 205, 50); */
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 10px 10px 10px rgb(122, 205, 50);
+}
+footer img{
+    width: 150px;
+    /* background-color: rgb(122, 205, 50); */
+}
+.icon, .icon i{
+    background-color: rgb(122, 205, 50);
+    color: rgb(15, 15, 15);
+    font-size: 40px;
+    margin-left: 15px;
+}
+.icon h4{
+    background-color: rgb(122, 205, 50);
+}
+footer .box i{
+    font-size: 50px;
+    margin-right: 18px;
+}
+footer .box span a{
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(84, 89, 76);
+}
+footer .box1 a{
+    text-decoration: none;
+}
+footer .box1 a i{
+    font-size: 35px;
+    margin-right: 12px;
+}
+
+#copy, #copy p{
+    background-color: rgb(122, 205, 50);
+    color: rgb(252, 253, 254);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+#fixed{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 40px;
+    color: rgb(252, 253, 254);
+    background-color: rgb(89, 205, 50);
+    border-radius: 30px;
+    padding: 8px;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    animation: glow 1s infinite alternate;
+    z-index: 3;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+}
+
+
+
+
+
+@media (max-width : 768px){
+    #home{
+        width: 100%;
+        height: auto;
+    }
+    #intro{
+        width: 100%;
+        height: auto;
+    }
+    #owner{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    footer img{
+        width: 120px;
+    }
+    footer .box{
+        margin-block: 50px;
+    }
+    footer .box i{
+        display: none;
+        margin: 0;
+    }
+    footer .box1{
+        margin: 0;
+    }
 }
