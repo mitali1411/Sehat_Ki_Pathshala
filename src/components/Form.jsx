@@ -79,7 +79,8 @@ const Form = () => {
 
   return (
     <div className='py-5 px-5 d-flex align-items-center justify-content-center flex-column'>
-        <h2 className='text-center text-uppercase'>Know about you</h2>
+        <h2 className='text-center text-uppercase'>Know About you</h2>
+        <p className='text-center' id='form-para'> Fill out the form to help us serve you better</p>
         {submitted ? (
             <div className="card my-5 p-5 d-flex align-items-center justify-content-center shadow rounded-0">
                 <i className='bx bxs-check-circle' id='check' ></i>

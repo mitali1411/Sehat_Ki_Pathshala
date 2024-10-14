@@ -1,54 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 *{
-    color: rgb(122, 205, 50);
+    color: #75bf61;
     background: rgb(252, 253, 254);
     font-family: "Tiro Devanagari Hindi", serif;
 }
 body{
     background-position: center;
 }
-/* .navbar, .navbar-brand{
-    background: yellowgreen;
-    color: rgb(252, 253, 254);
-}
-.navbar h3{
-    background-color: yellowgreen;
-} */
  .navbar{
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 2;
-    box-shadow: 0px 0px 10px 0px rgb(122, 205, 50);
+    box-shadow: 0px 0px 10px 0px #75bf61;
 
  }
 .navbar img{
-    width: 90px;
+    width: 130px;
     border-radius: 50%;
 }
-.navbar button{
-    background-color: rgb(122, 205, 50);
-    color: rgb(252, 253, 254);
-    font-weight: 500;
-    height: 45px;
-    border-radius: 15px 5px 15px 5px;
+.navbar img:hover{
+    opacity: 80%;
 }
-.navbar button a{
-    background-color: rgb(122, 205, 50);
-    text-decoration: none;
+.navbar .icons{
+    font-size: 35px;
 }
-.navbar button:hover{
-    background-color: rgb(252, 253, 254);
-    border: 2px solid rgb(122, 205, 50);
-    border-style: dashed;
+.navbar .icons i:hover{
+    color: rgb(236, 245, 234);
+        text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;
 }
-.navbar button a:hover{
-    background-color: rgb(252, 253, 254);
+h2{
+    color: rgb(243, 246, 242);
+    text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;  
+    cursor: pointer;
 }
 #call{
     color: black;
-    background-color: rgb(122, 205, 50);
+    background-color: #75bf61;
 }
 a{
     text-decoration: none;
@@ -97,7 +86,7 @@ a{
     margin-left: 10px;
 }
 #submit{
-    background-color: rgb(122, 205, 50);
+    background-color: #75bf61;
     color: aliceblue;
 }
 #submit:hover{
@@ -106,41 +95,39 @@ a{
 form{
     width: 450px;
     height: auto;
-    box-shadow: 0px 0px 10px 2px rgb(122, 205, 50);
-
+    box-shadow: 0px 0px 10px 2px #75bf61;
+}
+#form-para{
+    font-size: 20px;
 }
 
 
 footer{
-    /* background-color: rgb(122, 205, 50); */
+    /* background-color: #75bf61; */
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0px 10px 10px 10px rgb(122, 205, 50);
+    box-shadow: 0px 10px 10px 10px #75bf61;
 }
 footer img{
     width: 150px;
-    /* background-color: rgb(122, 205, 50); */
+    /* background-color: #75bf61; */
 }
-.icon, .icon i{
-    background-color: rgb(122, 205, 50);
-    color: rgb(15, 15, 15);
-    font-size: 40px;
-    margin-left: 15px;
+
+footer .box span i{
+    font-size: 30px;
+    margin-bottom: 11px;
+    margin-right: 5px;
 }
-.icon h4{
-    background-color: rgb(122, 205, 50);
-}
-footer .box i{
-    font-size: 50px;
-    margin-right: 18px;
-}
-footer .box span a{
+footer .box a{
     text-decoration: none;
     font-size: 19px;
-    color: rgb(84, 89, 76);
 }
+footer h4{
+    border-bottom: 2px solid #75bf61;
+}
+
 footer .box1 a{
     text-decoration: none;
 }
@@ -149,8 +136,17 @@ footer .box1 a i{
     margin-right: 12px;
 }
 
+footer .box1 img:first-child{
+    width: 30px;
+    height: 30px;
+}
+footer .box1 img:nth-child(2), footer .box1 img:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
 #copy, #copy p{
-    background-color: rgb(122, 205, 50);
+    background-color: #75bf61;
     color: rgb(252, 253, 254);
     font-size: 18px;
     margin-top: 10px;
@@ -171,6 +167,12 @@ footer .box1 a i{
     animation: glow 1s infinite alternate;
     z-index: 3;
 }
+#tag{
+    /* text-shadow: 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228; */
+    color: rgb(236, 245, 234);
+    animation: glow1 1s infinite alternate; 
+    font-style: italic;
+}
 
 
 @keyframes glow {
@@ -184,6 +186,20 @@ footer .box1 a i{
 
     100% {
         text-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+}
+
+@keyframes glow1 {
+    0% {
+        text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #288228, 0 0 10px #288228, 0 0 15px #288228, 0 0 20px #288228;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;
     }
 }
 
@@ -204,6 +220,9 @@ footer .box1 a i{
         width: 100%;
         height: auto;
     }
+    .navbar img{
+        width: 100px;
+    }
     footer{
         width: 100%;
         height: auto;
@@ -217,11 +236,18 @@ footer .box1 a i{
     footer .box{
         margin-block: 50px;
     }
-    footer .box i{
+    /* footer .box i{
         display: none;
         margin: 0;
-    }
+    } */
     footer .box1{
         margin: 0;
+    }
+}
+
+@media (max-width : 480px){
+
+    form{
+        width: 380px;
     }
 }
