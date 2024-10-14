@@ -29,7 +29,7 @@ const Footer = () => {
             <img src={wa} alt="" />
           </a>
        
-          <a href="https://www.facebook.com/people/Sehat-Ki-Paathshala/61556904706327/?mibextid=ZbWKwL">
+          <a href="https://www.facebook.com/people/Sehat-Ki-Paathshala/61556904706327/?mibextid=ZbWKwL" className='mx-2'>
             <img src={fb} alt="" />
           </a>
 
