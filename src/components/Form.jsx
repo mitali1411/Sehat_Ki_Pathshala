@@ -88,7 +88,7 @@ const Form = () => {
                 <h5 className='text-muted mt-3 text-center'>Your form has been submitted successfully!!</h5>
             </div>
         ) : (
-            <form onSubmit={handleSubmit} className='p-5 rounded-0'>
+            <form onSubmit={handleSubmit} className='container-fluid p-5 rounded-0'>
             <div className="mb-4">
                 <label htmlFor="Name" className="form-label">Enter Your Name</label>
                 <input type="text" name='name' className={`form-control ${errors.name ? 'is-invalid' : ""}`} id="Name" value={formData.name} onChange={handleChange} required/>
@@ -109,7 +109,7 @@ const Form = () => {
                 <input type="time" name='time' className={`form-control ${errors.time ? 'is-invalid' : ""}`} id="Call" value={formData.time} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.time}</span>
             </div>
-            <button type="submit" className="btn float-end" id='submit'>Submit</button>
+            <button type="submit" className="btn btn float-end" id='submit'>Submit</button>
         </form>
         )}
     </div>

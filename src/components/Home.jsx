@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div id='home' className='d-flex align-items-start justify-content-around flex-wrap-reverse'>
       
-        <div id='owner' className='p-5 d-flex align-items-center justify-content-center'> 
+        <div id='owner' className='d-flex align-items-center justify-content-center'> 
             <img src={Image} alt="" />
         </div>
         
