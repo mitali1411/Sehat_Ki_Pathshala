@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <h2 className='text-center mt-5' id='tag'>आश्वासन नहीं, परिणमो की दुनिया </h2>
+      <h2 className='text-center mt-5' id='tag'>आश्वासन नहीं, परिणामों की दुनिया</h2>
       <a href="https://api.whatsapp.com/send?phone=919074010119" target='_blank'><i className='bx bxl-whatsapp' id='fixed'></i></a>
       <Home/>
       <Slider/>

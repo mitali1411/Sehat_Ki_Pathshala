@@ -15,55 +15,93 @@ const Slider = () => {
         <h2 className='text-center my-4'>OUR RESULTS</h2>
         <div className="row">
             <div className="col-md-8 offset-md-2">
-                <div id="carouselExampleIndicators" 
-                     className="carousel slide" 
-                     data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        <div className="carousel-item">
-                            <img src={Result1} className="d-block w-100" alt="Slide 1"/>
-                        </div>
 
-                        <div className="carousel-item">
-                            <img src={Result2} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={Result3} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={Result4} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={Result5} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item active">
-                            <img src={Result6} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={Result7} className="d-block w-100" alt="Slide 1"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={Result8} className="d-block w-100" alt="Slide 1"/>
-                        </div>
+            <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active" data-bs-interval="2000">
+                        <img src={Result1} className="d-block w-100" alt="..."/>
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                                    
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result2} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result3} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result4} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result5} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result6} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result7} className="d-block w-100" alt="..."/>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={Result8} className="d-block w-100" alt="..."/>
+                    </div>
+                </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
             </div>
+
+            {/* <div id="carouselExampleControls" data-mdb-carousel-init className="carousel slide" data-mdb-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img src={Result1} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result2} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result3} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result4} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result5} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result6} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result7} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+
+                    <div className="carousel-item active">
+                        <img src={Result8} className="d-block w-100" alt="Slide 1"/>
+                    </div>
+        
+                </div>
+                <button data-mdb-button-init className="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button data-mdb-button-init className="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </div> */}
             </div>
         </div>
     </div>
+
+    
   )
 }
 
