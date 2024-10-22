@@ -1,23 +1,28 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Form from './components/Form'
+import Home from './Pages/Home'
+import Form from './Pages/Form'
+import About from './Pages/About'
 import Slider from './components/Slider'
 import Footer from './components/Footer'
 import CopyRight from './components/CopyRight'
+import Contact from './Pages/Contact'
+import PageNotFound from './Pages/PageNotFound'
 
 const App = () => {
   return (
-    <>
-      <Navbar/>
-      <h2 className='text-center mt-5' id='tag'>आश्वासन नहीं, परिणामों की दुनिया</h2>
-      <a href="https://api.whatsapp.com/send?phone=919074010119" target='_blank'><i className='bx bxl-whatsapp' id='fixed'></i></a>
-      <Home/>
-      <Slider/>
-      <Form/>
-      <Footer/>
-      <CopyRight/>
-    </>
+    <Router>
+      <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<About/>}/>
+      <Route path='/result' element={<Slider/>}/>
+      <Route path='/info' element={<Form/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='*' element={<PageNotFound/>}/>
+      <Route path='/contact' element={<Footer/>}/>
+      </Routes>
+    </Router>
   )
 }
 

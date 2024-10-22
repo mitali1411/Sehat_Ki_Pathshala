@@ -7,7 +7,9 @@ const Form = () => {
         name : '',
         age : '',
         mobile : '',
-        time : ''
+        time : '',
+        height : '',
+        weight : ''
     });
     const [submitted, setSubmitted] = useState(false);
 
@@ -69,7 +71,7 @@ const Form = () => {
         setResult(data.message);
       }
 
-      setFormData({name: '', age: '', mobile: '', time: ''})
+      setFormData({name: '', age: '', mobile: '', time: '', height: '', weight: ''})
       setSubmitted(true)
     };
 
@@ -79,8 +81,8 @@ const Form = () => {
 
   return (
     <div className='py-5 px-5 d-flex align-items-center justify-content-center flex-column'>
-        <h2 className='text-center text-uppercase'>Know About you</h2>
-        <p className='text-center' id='form-para'> Fill out the form to help us serve you better</p>
+        <h2 className='text-center text-uppercase text-dark'>Know About you</h2>
+        <p className='text-center text-body-secondary' id='form-para'> Fill out the form to help us serve you better</p>
         {submitted ? (
             <div className="card my-5 p-5 d-flex align-items-center justify-content-center shadow rounded-0">
                 <i className='bx bxs-check-circle' id='check' ></i>
@@ -88,7 +90,7 @@ const Form = () => {
                 <h5 className='text-muted mt-3 text-center'>Your form has been submitted successfully!!</h5>
             </div>
         ) : (
-            <form onSubmit={handleSubmit} className='container-fluid p-5 rounded-0'>
+            <form onSubmit={handleSubmit} className='p-5 rounded-0'>
             <div className="mb-4">
                 <label htmlFor="Name" className="form-label">Enter Your Name</label>
                 <input type="text" name='name' className={`form-control ${errors.name ? 'is-invalid' : ""}`} id="Name" value={formData.name} onChange={handleChange} required/>
@@ -103,6 +105,16 @@ const Form = () => {
                 <label htmlFor="Age" className="form-label">Enter Your Age</label>
                 <input type="number" name='age' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Age" value={formData.age} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.age}</span>
+            </div>
+            <div className="mb-4">
+                <label htmlFor="Height" className="form-label">Enter Your Height</label>
+                <input type="number" name='height' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Height" value={formData.height} onChange={handleChange} required/>
+                <span className='text-danger'>{errors.height}</span>
+            </div>
+            <div className="mb-4">
+                <label htmlFor="Age" className="form-label">Enter Your Weight</label>
+                <input type="number" name='weight' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Age" value={formData.weight} onChange={handleChange} required/>
+                <span className='text-danger'>{errors.weight}</span>
             </div>
             <div className="mb-4">
                 <label htmlFor="Call" className="form-label">Enter Time for Call</label>

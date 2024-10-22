@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     color: #75bf61;
     background: rgb(252, 253, 253);
-    font-family: "Tiro Devanagari Hindi", serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Poppins", sans-serif;
 }
 body{
     background-position: center;
@@ -17,7 +17,7 @@ body{
 
  }
 .navbar img{
-    width: 130px;
+    width: 90px;
     border-radius: 50%;
 }
 .navbar img:hover{
@@ -35,8 +35,8 @@ h2{
     color: rgb(243, 246, 242);
     /* text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;   */
     cursor: pointer;
-    color: #000;
-    font-weight: 700;
+    /* color: #000; */
+    font-weight: 500;
 
 }
 #call{
@@ -79,16 +79,16 @@ a{
 #check{
     font-size: 100px;
 }
+#slider{
+    position: relative;
+    z-index: 0
+}
 .carousel-item img{
     width: 30vh;
     height: 70vh;
     object-fit: contain;
     position: relative;
     z-index: 1;
-}
-#flag{
-    width: 30px;
-    height: 30px;
 }
 #phone-number{
     margin-left: 10px;
@@ -101,7 +101,7 @@ a{
     color: black;
 }
 form{
-    width: 450px;
+    width: 50%;
     height: auto;
     box-shadow: 0px 0px 5px 0px #75bf61;
 }
@@ -120,11 +120,13 @@ form label{
 
 footer{
     /* background-color: #75bf61; */
-    height: 30vh;
+    height: auto;
+    width: 100%;
+    padding: 30px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
-    box-shadow: 0px 10px 10px 10px #75bf61;
+    box-shadow: 0px 10px 8px 10px #75bf61;
 }
 footer img{
     width: 150px;
@@ -139,6 +141,16 @@ footer .box span i{
 footer .box a{
     text-decoration: none;
     font-size: 19px;
+}
+footer .box ol li{
+    list-style: none;
+    margin-block: 5px;
+    color: #000;
+    position: relative;
+    right: 25px;
+}
+footer .box ol li:hover{
+    color: #75bf61;
 }
 footer h4{
     border-bottom: 2px solid #75bf61;
@@ -156,8 +168,17 @@ footer .box1 a i{
 footer .box1 a img{
     width: 35px;
     height: 35px;
+    filter: saturate(180%);
 }
-
+footer .box1 a img:hover{
+    filter:none;
+}
+#copy{
+    width: 100%;
+    height: auto;
+    /* position: fixed;
+    bottom: 0; */
+}
 #copy, #copy p{
     background-color: #75bf61;
     color: rgb(252, 253, 254);
@@ -184,7 +205,15 @@ footer .box1 a img{
     /* text-shadow: 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228; */
     color: rgb(244, 247, 249);
     animation: glow1 1s infinite alternate; 
-    font-style: italic;
+    /* font-style: italic; */
+}
+#page-not-found{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -197,10 +226,17 @@ footer .box1 a img{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='yellowgreen' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
-/* .carousel-control-next-icon,
-.carousel-control-prev-icon {
-  filter: invert(1);
-} */
+
+/* About Us */
+#about p{
+    font-size: 18px;
+    text-align: justify;
+}
+#about h2{
+    font-size: 33px;
+    width: 165px;
+    border-bottom: 3px solid black;
+}
 
 
 
@@ -258,20 +294,24 @@ footer .box1 a img{
         height: auto;
         display: flex;
         flex-direction: column;
+        align-items: start;
+        justify-content: center;
         padding: 50px;
     }
     footer img{
         width: 120px;
+        margin-bottom: 20px;
+        align-self: center;
     }
     footer .box{
-        margin-block: 50px;
+        margin-top: 40px;
     }
     /* footer .box i{
         display: none;
         margin: 0;
     } */
     footer .box1{
-        margin: 0;
+        margin-top: 40px;
     }
     form{
         width: 450px;
@@ -279,9 +319,24 @@ footer .box1 a img{
     form label{
         font-size: 16px;
     }
+    #form-para{
+        font-size: 17px;
+    }
     .navbar .icons{
         font-size: 38px;
         margin-top: 5px;
+    }
+    #about p{
+        font-size: 16px;
+        text-align: justify;
+    }
+    #about h2{
+        font-size: 28px;
+        width: 140px;
+        border-bottom: 3px solid black;
+    }
+    #copy p{
+        font-size: 16px;
     }
 }
 
@@ -289,8 +344,5 @@ footer .box1 a img{
 
     form{
         width: 380px;
-    }
-    #copy p{
-        font-size: 15px;
     }
 }

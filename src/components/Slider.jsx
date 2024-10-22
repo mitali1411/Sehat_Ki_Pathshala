@@ -11,8 +11,9 @@ import Result8 from '../assets/8.jpg'
 
 const Slider = () => {
   return (
-    <div className="container py-5">
-        <h2 className='text-center my-4'>OUR RESULTS</h2>
+    <div className="container py-5" id='slider'>
+        <h2 className='text-center text-dark'>OUR RESULTS</h2>
+        <p className='text-center text-body-secondary'>Transform your body and life with real, lasting results.</p>
         <div className="row">
             <div className="col-md-8 offset-md-2">
 

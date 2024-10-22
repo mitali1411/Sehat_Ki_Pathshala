@@ -3,6 +3,7 @@ import Logo from '../assets/Logo2.png'
 import fb from '../assets/fb.png'
 import insta from '../assets/insta.png'
 import wa from '../assets/wha.png'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -17,9 +18,18 @@ const Footer = () => {
           <h4>Call Us</h4>
         </span>
 
-        <a href=''>+91-9074010119</a>
+        <a href='tel:+919074010119'>+91-9074010119</a>
         <br />
-        <a href="">+91-8718810605</a>
+        <a href="tel:+918718810605">+91-8718810605</a>
+      </div>
+
+      <div className="box">
+        <h4>Quick Links</h4>
+        <ol>
+          <Link to='/'><li>Home</li></Link>
+          <Link to='/about'><li>About Us</li></Link>
+          <Link to='/contact'><li>Contact Us</li></Link>
+        </ol>
       </div>
 
       <div className='box1'>
