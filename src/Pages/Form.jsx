@@ -101,19 +101,19 @@ const Form = () => {
                 <input type="tel" name='mobile' className={`form-control ${errors.mobile ? 'is-invalid' : ""}`} id="Number" value={formData.mobile} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.mobile}</span>
             </div>
-            <div className="mb-4">
+            {/* <div className="mb-4">
                 <label htmlFor="Age" className="form-label">Enter Your Age</label>
                 <input type="number" name='age' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Age" value={formData.age} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.age}</span>
-            </div>
+            </div> */}
             <div className="mb-4">
                 <label htmlFor="Height" className="form-label">Enter Your Height</label>
-                <input type="number" name='height' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Height" value={formData.height} onChange={handleChange} required/>
+                <input type="number" name='height' className={`form-control ${errors.height ? 'is-invalid' : ""}`} id="Height" value={formData.height} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.height}</span>
             </div>
             <div className="mb-4">
                 <label htmlFor="Age" className="form-label">Enter Your Weight</label>
-                <input type="number" name='weight' className={`form-control ${errors.age ? 'is-invalid' : ""}`} id="Age" value={formData.weight} onChange={handleChange} required/>
+                <input type="number" name='weight' className={`form-control ${errors.weight ? 'is-invalid' : ""}`} id="Age" value={formData.weight} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.weight}</span>
             </div>
             <div className="mb-4">

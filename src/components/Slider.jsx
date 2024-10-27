@@ -11,7 +11,7 @@ import Result8 from '../assets/8.jpg'
 
 const Slider = () => {
   return (
-    <div className="container py-5" id='slider'>
+    <div className="container pt-5" id='slider'>
         <h2 className='text-center text-dark'>OUR RESULTS</h2>
         <p className='text-center text-body-secondary'>Transform your body and life with real, lasting results.</p>
         <div className="row">
@@ -53,51 +53,6 @@ const Slider = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-
-            {/* <div id="carouselExampleControls" data-mdb-carousel-init className="carousel slide" data-mdb-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={Result1} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result2} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result3} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result4} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result5} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result6} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result7} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-
-                    <div className="carousel-item active">
-                        <img src={Result8} className="d-block w-100" alt="Slide 1"/>
-                    </div>
-        
-                </div>
-                <button data-mdb-button-init className="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button data-mdb-button-init className="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div> */}
             </div>
         </div>
     </div>

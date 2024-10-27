@@ -63,6 +63,10 @@ a{
 } */
 #owner img{
     width: 300px;
+    background-color: #aff7a4;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
 }
 
 #home{
@@ -85,7 +89,13 @@ a{
 }
 #slider{
     position: relative;
+    top: 10px;
     z-index: 0
+}
+.row{
+    margin-top: 0;
+    position: relative;
+    bottom: 10px;
 }
 .carousel-item img{
     width: 30vh;
@@ -119,6 +129,7 @@ form label{
     font-weight: 500;
     font-size: 18px;
     color: #000;
+    margin-top: 15px;
 }
 
 
@@ -328,7 +339,20 @@ footer .box1 a img:hover{
         padding: 0%;
     }
     .navbar img{
-        width: 100px;
+        width: 80px;
+    }
+    #intro .para{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.8;
+    }
+    #intro h1{
+        font-size: 35px;
+    }
+    .row{
+        margin-top: 0;
+        position: relative;
+        bottom: 20px;
     }
     footer{
         width: 100%;
@@ -354,6 +378,12 @@ footer .box1 a img:hover{
     footer .box1{
         margin-top: 40px;
     }
+    .box ol li, .box a{
+        font-size: 18px;
+    }
+    footer h4{
+        font-size: 22px;
+    }
     form{
         width: 450px;
     }
@@ -377,7 +407,22 @@ footer .box1 a img:hover{
         border-bottom: 3px solid black;
     }
     #copy p{
+        font-size: 14px;
+    }
+    #contact h2{
+        font-size: 25px;
+    }
+    #contact .box3 h6{
         font-size: 16px;
+    }
+    #contact .box3 p{
+        font-size: 18px;
+    }
+    #contact .box3 i{
+        font-size: 21px;
+    }
+    #about h2{
+        font-size: 25px;
     }
 }
 
