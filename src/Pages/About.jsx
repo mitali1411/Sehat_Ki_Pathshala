@@ -6,12 +6,12 @@ import CopyRight from '../components/CopyRight'
 
 const About = () => {
   return (
-    <>
+    <section id='about'>
       <Navbar/>
       <AboutContent/>
       <Footer/>
       <CopyRight/>
-    </>
+    </section>
   )
 }
 

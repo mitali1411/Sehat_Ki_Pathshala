@@ -292,6 +292,32 @@ footer .box1 a img:hover{
 
 
 
+/* ///////  BLOGS  /////// */
+#blog{
+    width: 100%;
+    height: auto;
+}
+.card{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.card img{
+    width: 80%;
+    align-self: center;
+}
+#blogs h2{
+    font-size: 30px;
+    width: 300px;
+    border-bottom: 3px solid black;
+    align-self: center;
+}
+#blogs p{
+    font-size: 18px;
+}
+
+
+
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
@@ -422,6 +448,9 @@ footer .box1 a img:hover{
         font-size: 21px;
     }
     #about h2{
+        font-size: 25px;
+    }
+    #blog h2{
         font-size: 25px;
     }
 }

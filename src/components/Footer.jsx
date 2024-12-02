@@ -12,6 +12,16 @@ const Footer = () => {
 
         <img src={Logo} alt="" />
 
+        <div className="box">
+        <h4>Quick Links</h4>
+        <ol>
+          <Link to='/'><a href="#home"><li>Home</li></a></Link>
+          <Link to='/about'><a href="#about"><li>About Us</li></a></Link>
+          <Link to='/blogs'><a href="#blogs"><li>Our Blogs</li></a></Link>
+          <Link to='/contact'><li>Contact Us</li></Link>
+        </ol>
+      </div>
+
       <div className="box">
         <span className='d-flex align-items-center'>
           <i className='bx bxs-phone-call'></i>
@@ -21,15 +31,6 @@ const Footer = () => {
         <a href='tel:+919074010119'>+91-9074010119</a>
         <br />
         <a href="tel:+918718810605">+91-8718810605</a>
-      </div>
-
-      <div className="box">
-        <h4>Quick Links</h4>
-        <ol>
-          <Link to='/'><li>Home</li></Link>
-          <Link to='/about'><li>About Us</li></Link>
-          <Link to='/contact'><li>Contact Us</li></Link>
-        </ol>
       </div>
 
       <div className='box1'>

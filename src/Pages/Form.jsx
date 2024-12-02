@@ -5,7 +5,7 @@ const Form = () => {
     const [result, setResult] = useState("");
     const [formData, setFormData] = useState({
         name : '',
-        age : '',
+        // age : '',
         mobile : '',
         time : '',
         height : '',
@@ -32,31 +32,45 @@ const Form = () => {
         }
     
         // Age validation
-        if (!formData.age) {
-          newErrors.age = "Age is required.";
-        } else if (isNaN(formData.age) || formData.age < 1 || formData.age > 120) {
-          newErrors.age = "Enter a valid age between 1 and 120.";
-        }
+        // if (!formData.age) {
+        //   newErrors.age = "Age is required.";
+        // } else if (isNaN(formData.age) || formData.age < 1 || formData.age > 120) {
+        //   newErrors.age = "Enter a valid age between 1 and 120.";
+        // }
     
         // Time validation
         if (!formData.time) {
           newErrors.time = "Please select a time.";
         }
+
+        // Height validation
+        if (!formData.height) {
+          newErrors.time = "Please enter height in inches.";
+        }
+
+        // Time validation
+        if (!formData.weight) {
+          newErrors.time = "Please enter weight in kgs.";
+        }
     
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
       };
+
+
     //   ///////////////////////////////////////////////////////////
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async(e) => {
       e.preventDefault();
+
+      console.log("submitted")
 
     if (!validateForm()) return;
 
       const formData = new FormData(e.target);
   
-      // formData.append("access_key", "bfefc8d7-c15d-4f49-8c6d-81f5b95a2ae4");
-      formData.append("access_key", "a3123de8-0f31-409a-90f2-fc83a4174ad7")
+      formData.append("access_key", "bfefc8d7-c15d-4f49-8c6d-81f5b95a2ae4");
+      // formData.append("access_key", "a3123de8-0f31-409a-90f2-fc83a4174ad7")
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -71,7 +85,7 @@ const Form = () => {
         setResult(data.message);
       }
 
-      setFormData({name: '', age: '', mobile: '', time: '', height: '', weight: ''})
+      setFormData({name: '', mobile: '', time: '', height: '', weight: ''})
       setSubmitted(true)
     };
 
@@ -107,12 +121,12 @@ const Form = () => {
                 <span className='text-danger'>{errors.age}</span>
             </div> */}
             <div className="mb-4">
-                <label htmlFor="Height" className="form-label">Enter Your Height</label>
+                <label htmlFor="Height" className="form-label">Enter Your Height(in cm/inch)</label>
                 <input type="number" name='height' className={`form-control ${errors.height ? 'is-invalid' : ""}`} id="Height" value={formData.height} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.height}</span>
             </div>
             <div className="mb-4">
-                <label htmlFor="Age" className="form-label">Enter Your Weight</label>
+                <label htmlFor="Age" className="form-label">Enter Your Weight(in kg)</label>
                 <input type="number" name='weight' className={`form-control ${errors.weight ? 'is-invalid' : ""}`} id="Age" value={formData.weight} onChange={handleChange} required/>
                 <span className='text-danger'>{errors.weight}</span>
             </div>

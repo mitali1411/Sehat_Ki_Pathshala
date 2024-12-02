@@ -9,7 +9,7 @@ import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
-    <>
+    <section id='home'>
       <Navbar/>
       <h2 className='text-center mt-5' id='tag'>आश्वासन नहीं, परिणामों की दुनिया</h2>
       <Intro/>
@@ -18,7 +18,7 @@ const Home = () => {
       <Footer/>
       <CopyRight/>
       <Sticky/>
-    </>
+    </section>
   )
 }
 
