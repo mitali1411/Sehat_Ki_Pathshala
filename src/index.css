@@ -14,8 +14,7 @@ body{
     top: 0;
     z-index: 2;
     box-shadow: 0px 0px 10px 0px #75bf61;
-
- }
+}
 .navbar img{
     width: 90px;
     border-radius: 50%;
@@ -23,21 +22,27 @@ body{
 .navbar img:hover{
     opacity: 80%;
 }
-.navbar .icons{
-    font-size: 38px;
-    margin-top: 30px;
+.navbar .container-fluid{
+    padding-inline: 30px;
 }
-.navbar .icons i:hover{
-    color: rgb(236, 245, 234);
-        text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;
+.nav-link{
+    display: inline-block;
+   text-decoration: none;
+   font-size: 20px;
+   transition: .3s;
+   opacity: 0;
+   animation: slideTop .5s ease forwards;
+   margin-right: 10px;
+}
+.nav-link:hover,
+.nav-link .active{
+    color: #75bf61;
+    border-bottom: 3px solid #75bf61;
 }
 h2{
     color: rgb(243, 246, 242);
-    /* text-shadow: 0 0 5px #288228, 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228;   */
     cursor: pointer;
-    /* color: #000; */
     font-weight: 500;
-
 }
 #call{
     color: black;
@@ -45,12 +50,10 @@ h2{
 }
 a{
     text-decoration: none;
-    /* background-color: yellowgreen; */
     color: black;
 }
 #intro h1{
     font-size: 35px;
-    /* font-weight: bolder; */
 }
 .para{
     font-size: 20px;
@@ -58,9 +61,6 @@ a{
     margin-top: 10px;
     font-weight: 600;
 }
-/* .h2{
-    margin-bottom: -5px;
-} */
 #owner img{
     width: 300px;
     background-color: #aff7a4;
@@ -121,7 +121,6 @@ form{
 }
 #form-para{
     font-size: 20px;
-    /* margin-block: 10px; */
     margin-bottom: 40px;
     color: #000;
 }
@@ -134,7 +133,6 @@ form label{
 
 
 footer{
-    /* background-color: #75bf61; */
     height: auto;
     width: 100%;
     padding: 30px;
@@ -145,7 +143,6 @@ footer{
 }
 footer img{
     width: 150px;
-    /* background-color: #75bf61; */
 }
 
 footer .box span i{
@@ -191,8 +188,6 @@ footer .box1 a img:hover{
 #copy{
     width: 100%;
     height: auto;
-    /* position: fixed;
-    bottom: 0; */
 }
 #copy, #copy p{
     background-color: #75bf61;
@@ -217,10 +212,8 @@ footer .box1 a img:hover{
     z-index: 3;
 }
 #tag{
-    /* text-shadow: 0 0 5px #288228, 0 0 10px #288228, 0 0 15px #288228; */
     color: rgb(244, 247, 249);
     animation: glow1 1s infinite alternate; 
-    /* font-style: italic; */
 }
 #page-not-found{
     width: 100%;
@@ -287,33 +280,28 @@ footer .box1 a img:hover{
 .box2 i{
     font-size: 25px;
     margin-bottom: 20px;
-    /* color: red; */
 }
 
 
 
 /* ///////  BLOGS  /////// */
-#blog{
+#blogs{
     width: 100%;
     height: auto;
 }
-.card{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
 .card img{
-    width: 80%;
+    width: 100%;
     align-self: center;
 }
 #blogs h2{
-    font-size: 30px;
-    width: 300px;
+    font-size: 28px;
+    width: 290px;
     border-bottom: 3px solid black;
     align-self: center;
 }
 #blogs p{
     font-size: 18px;
+    text-align: justify;
 }
 
 
@@ -343,6 +331,17 @@ footer .box1 a img:hover{
 
     100% {
         text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 
@@ -423,6 +422,14 @@ footer .box1 a img:hover{
         font-size: 38px;
         margin-top: 5px;
     }
+    .nav-link{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .navbar-toggler{
+        color: #75bf61;
+        border: 2px solid #75bf61;
+    }
     #about p{
         font-size: 16px;
         text-align: justify;
@@ -450,8 +457,12 @@ footer .box1 a img:hover{
     #about h2{
         font-size: 25px;
     }
-    #blog h2{
+    #blogs h2{
         font-size: 25px;
+    }
+    #blogs{
+        width: 100%;
+        height: auto;
     }
 }
 

@@ -17,7 +17,7 @@ const Footer = () => {
         <ol>
           <Link to='/'><a href="#home"><li>Home</li></a></Link>
           <Link to='/about'><a href="#about"><li>About Us</li></a></Link>
-          <Link to='/blogs'><a href="#blogs"><li>Our Blogs</li></a></Link>
+          <Link to='/result'><a href="#blogs"><li>Our Blogs</li></a></Link>
           <Link to='/contact'><li>Contact Us</li></Link>
         </ol>
       </div>
@@ -36,15 +36,15 @@ const Footer = () => {
       <div className='box1'>
         <h4>Follow Us</h4>
 
-          <a href="https://api.whatsapp.com/send?phone=919074010119">
+          <a href="https://api.whatsapp.com/send?phone=919074010119" target='_blank'>
             <img src={wa} alt="" />
           </a>
        
-          <a href="https://www.facebook.com/people/Sehat-Ki-Paathshala/61556904706327/?mibextid=ZbWKwL" className='mx-2'>
+          <a href="https://www.facebook.com/people/Sehat-Ki-Paathshala/61556904706327/?mibextid=ZbWKwL" className='mx-2' target='_blank'>
             <img src={fb} alt="" />
           </a>
 
-          <a href="https://www.instagram.com/sehat_ki_pathshala.by_deep?igsh=dzlyeW10cTM0dDZs">
+          <a href="https://www.instagram.com/sehat_ki_pathshala.by_deep?igsh=dzlyeW10cTM0dDZs" target='_blank'>
             <img src={insta} alt="" />
           </a>
       </div>
