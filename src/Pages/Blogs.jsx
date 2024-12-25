@@ -29,11 +29,11 @@ const Blogs = () => {
 
   return (
     <>
-    <section id="blogs" className='container-fluid'>
       <Navbar/>
-      <h2 className='text-dark my-3 text-uppercase text-center'>Our Achievements</h2>
-      <div className="container mt-4">
-      <div className="row g-5">
+    <section id="blogs" className='container-fluid d-flex align-items-center justify-content-center flex-column'>
+      <h2 className='text-dark mt-5 text-uppercase text-center'>Our Achievements</h2>
+      <div className="container p-4">
+      <div className="row g-4">
       {cardsData.map((card, index) => (              
                 <div className="col-md-6 col-lg-4" key={index}>
                   <div className="card shadow-sm border-2 rounded">
@@ -49,6 +49,7 @@ const Blogs = () => {
             </div>
             </div>
         </section>
+        <hr className='m-auto'/>
         <Footer/>
         <CopyRight/>
         <Sticky/>

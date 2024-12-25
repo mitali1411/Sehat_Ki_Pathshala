@@ -288,6 +288,8 @@ footer .box1 a img:hover{
 #blogs{
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: 0;
 }
 .card img{
     width: 100%;
@@ -295,7 +297,7 @@ footer .box1 a img:hover{
 }
 #blogs h2{
     font-size: 28px;
-    width: 290px;
+    width: 278px;
     border-bottom: 3px solid black;
     align-self: center;
 }
@@ -456,9 +458,11 @@ footer .box1 a img:hover{
     }
     #about h2{
         font-size: 25px;
+        width: 123px;
     }
     #blogs h2{
         font-size: 25px;
+        width: 250px;
     }
     #blogs{
         width: 100%;
